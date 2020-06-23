@@ -1,0 +1,12 @@
+RewriteEngine On
+Options -Indexes
+Options -MultiViews
+RewriteRule ^account/settings/?$ settings.php
+RewriteRule ^register/?$ register.php
+RewriteRule ^account/home/?$ home.php
+RewriteRule ^verification/?$ verification.php
+RewriteRule ^verification/phone/?$ phoneVerification.php
+RewriteRule ^verification/([a-zA-Z0-9]+)/?$ verification.php?verify=$1  
+RewriteRule ^account/recover/?$ recover.php
+RewriteRule ^account/recover/([a-zA-Z0-9]+)/?$ recover.php?verify=$1
+RewriteRule ^account/delete/?$ delete.php
